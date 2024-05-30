@@ -23,8 +23,14 @@ https://www.miningrigrentals.com/api/v2/
    
    POST https://api.telegram.org/{{bot_id}}/sendMessage?chat_id={{chat_id}}&text=Hashrate dropped to {{hash}} T/H
    
-4) doown load and install newman: https://github.com/postmanlabs/newman 
+4) doownload and install newman: https://github.com/postmanlabs/newman 
    
 5) Export from Postman your collection into coll.json & environmentals to env.json
 
-6) Run script.sh in terminal by using watch
+6) Run script.sh in terminal by using watch:
+
+chmod +x ./script.sh
+
+watch -n x ./script.sh (example: watch -n 900 ./script.sh, run every 15min)
+
+where x - is time interval in seconds at which to execute a command
