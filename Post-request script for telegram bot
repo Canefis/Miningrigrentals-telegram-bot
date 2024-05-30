@@ -3,7 +3,7 @@ pm.test("Response is ok", function () {
 });
 
 var jsonData = pm.response.json();
-pm.environment.set("hashrate15min", jsonData.data.hashrate.last_15min.hash * 0.000001);
+pm.environment.set("hashrate15min", jsonData.data.hashrate.last_15min.hash);
 var x = pm.environment.get("hashrate15min", jsonData.data.hashrate.last_15min.hash).toFixed(0);
 pm.environment.set("hash", x);
 
