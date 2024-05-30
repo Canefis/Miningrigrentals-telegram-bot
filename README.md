@@ -15,6 +15,7 @@ https://www.miningrigrentals.com/api/v2/
    
    GET https://www.miningrigrentals.com/api/v2/rig/ID
    ID - from miningrigrentals rig id number, which you like to monitor hashrate
+
  
    
    telegram bot:
