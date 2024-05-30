@@ -1,0 +1,16 @@
+pm.test("Response is ok", function () {
+    pm.response.to.have.status(200);
+});
+
+var jsonData = pm.response.json();
+pm.environment.set("hashrate15min", jsonData.data.hashrate.last_15min.hash * 0.000001);
+var x = pm.environment.get("hashrate15min", jsonData.data.hashrate.last_15min.hash).toFixed(0);
+pm.environment.set("hash", x);
+
+if (x <= 1324) {
+    postman.setNextRequest("name of bot request");
+} else {
+    setTimeout(() => {
+        postman.setNextRequest(null);
+    }, 3000);
+}
