@@ -1,0 +1,27 @@
+// Your private key
+const api_key = pm.variables.get('api_key');
+const api_secret = pm.variables.get('api_secret');
+
+// Request details
+const endpointUrl = request.url;
+const endpoint = endpointUrl.replace('{{url}}', '');
+const nonce = new Date().getTime();
+
+// Sign the string
+const canonicalString = api_key + nonce + endpoint;
+const hmac = CryptoJS.HmacSHA1(canonicalString, api_secret);
+const sign = hmac.toString(CryptoJS.enc.Hex);
+
+// Set HMAC in request headers
+pm.request.headers.add({
+key: 'x-api-sign',
+value: sign
+});
+pm.request.headers.add({
+key: 'x-api-key',
+value: api_key
+});
+pm.request.headers.add({
+key: 'x-api-nonce',
+value: nonce
+});
