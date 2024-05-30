@@ -13,9 +13,8 @@ https://www.miningrigrentals.com/api/v2/
    my request1:
    GET https://www.miningrigrentals.com/api/v2/rig/ID
    ID - from miningrigrentals rig id number, which you like to monitor hashrate
-   pre-request script tab: place pre-request script
-   post-request script tab: place post-request script
+ 
    
    telegram bot:
    POST https://api.telegram.org/{{bot_id}}/sendMessage?chat_id={{chat_id}}&text=Hashrate dropped to {{hash}} T/H
-5) 
+   
