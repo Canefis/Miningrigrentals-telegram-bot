@@ -5,7 +5,7 @@ Usage (Postman+newman+watch):
 
 https://www.miningrigrentals.com/api/v2/
 
-1) Place scripts into pre-request script tab and post-request script tab
+1) Place scripts into pre-request script tab and post-request script tab in Postman (https://www.postman.com)
 
 2) Create environmental variables "api_key" & "api_secret", "chat_id", "bot_id", "hashrate15min" & "hash"
 
