@@ -7,6 +7,7 @@ pm.environment.set("hashrate15min", jsonData.data.hashrate.last_15min.hash);
 var x = pm.environment.get("hashrate15min", jsonData.data.hashrate.last_15min.hash).toFixed(0);
 pm.environment.set("hash", x);
 
+//Function to compare hash with nominal value percentage
 if (x <= 1000 * 8%) {
     postman.setNextRequest("name of bot request");
 } else {
