@@ -1,4 +1,4 @@
-# Postman-pre-request-script-for-mrr
+# Postman + Newman + watch
 Miningrigrentals telegram bot
 
 Usage (Postman+newman+watch):
