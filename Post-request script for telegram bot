@@ -9,7 +9,7 @@ pm.environment.set("hash", x);
 
 //Function to compare hash with nominal value percentage
 if (x <= 1000 * 8%) {
-    postman.setNextRequest("name of bot request");
+    postman.setNextRequest("telegram bot");
 } else {
     setTimeout(() => {
         postman.setNextRequest(null);
