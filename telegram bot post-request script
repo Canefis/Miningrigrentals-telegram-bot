@@ -1,0 +1,7 @@
+pm.test("Response is ok", function () {
+    pm.response.to.have.status(200);
+});
+
+setTimeout(() => {
+postman.setNextRequest(null);
+}, 3000)
