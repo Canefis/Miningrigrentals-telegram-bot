@@ -1,5 +1,5 @@
-# Postman + Newman + watch
-Miningrigrentals telegram bot
+# Mrr telegram bot
+
 
 Usage (Postman+newman+watch):
 
