@@ -1,7 +1,7 @@
 # Postman-pre-request-script-for-mrr
 Miningrigrentals telegram bot
 
-Usage:
+Usage (Postman+newman+watch):
 
 https://www.miningrigrentals.com/api/v2/
 
