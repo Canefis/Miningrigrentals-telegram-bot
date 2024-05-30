@@ -23,3 +23,8 @@ https://www.miningrigrentals.com/api/v2/
    
    POST https://api.telegram.org/{{bot_id}}/sendMessage?chat_id={{chat_id}}&text=Hashrate dropped to {{hash}} T/H
    
+4) doown load and install newman: https://github.com/postmanlabs/newman 
+   
+5) Export from Postman your collection into coll.json & environmentals to env.json
+
+6) Run script.sh in terminal by using watch
